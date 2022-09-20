@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000000;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+     "header header"
+     "main main"
+     "section2 section2"
+     "footer footer";
+}
+.containerBio{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+     "header header"
+     "main main"
+     "footer footer";
+}
+.containerFotos{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+     "header header header header"
+     "mainFotos mainFotos mainFotos mainFotos"
+     "footer footer footer footer";
+}
+.containerShows{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+     "header header"
+     "mainShows mainShows"
+     "footer footer";
+}
+.header{
+    grid-area: header; 
+    background-color: #141414;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.header nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.header nav ul li{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.logoultra{
+    width: 300px;
+    margin: 20px 20px 20px 20px;
+}
+.menu{
+    list-style-type: none;
+    margin: 20px 20px 20px 20px;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.main{
+    grid-area: main; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainFotos{
+    grid-area: mainFotos; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainShows{
+    grid-area: mainShows; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section2{
+    grid-area: section2; 
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer{
+    grid-area: footer; 
+    background-color: #141414;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.fotoperfil{
+    width: 500px;
+    margin: 10px 10px 10px 10px;
+}
+.fotos{
+    width: 200px;
+    margin: 20px 20px 20px 20px;
+}
+.videos{
+    width: 150;
+    margin: 20px 20px 20px 20px;
+}
+.texto{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    width: 500px;
+    margin: 20px 20px 20px 20px;
+}
+iframe{
+    margin: 20px 20px 20px 20px;
+}
+.rrss{
+    width: 25px;
+    margin: 20px 20px 20px 20px;
+}
+h1{
+    color:#ffffff;
+    font-weight: normal;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;    
+    text-align: left;
+}
+.formulario{
+    color:#ffffff;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;    
+}
+@media only screen and (max-width:768px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+         "header"
+         "main"
+         "section2"
+         "footer";
+    }
+    .header{
+        grid-area: header; 
+        background-color: #141414;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .containerBio{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+         "header"
+         "main"
+         "footer";
+    }
+    .containerFotos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+         "header header"
+         "mainFotos mainFotos"
+         "footer footer";
+    }
+    .containerShows{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+         "header"
+         "mainShows"
+         "footer";
+    }
+}
